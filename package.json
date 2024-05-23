@@ -9,6 +9,8 @@
     "error-1": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error1",
     "error-2": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error2",
     "error-3": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error3",
+    "error-4": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error4",
+    "working": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @working",
     "codeceptjs:ui": "codecept-ui --app",
     "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
     "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",

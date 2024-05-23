@@ -1,4 +1,4 @@
-Feature("homepage").tag("@error1");
+Feature("Error 1").tag("@error1");
 
 Before(async ({ I }) => {
   I.amOnPage("https://www.google.com");
@@ -57,7 +57,6 @@ Scenario("test something 7", ({ I }) => {
   I.seeElement(buttonRefuseModal);
   I.click(buttonRefuseModal);
   I.dontSeeElement(buttonRefuseModal);
-  I.seeElement(buttonRefuseModal);
 });
 Scenario("test something 8", ({ I }) => {
   const buttonRefuseModal = locate("button#W0wltc");
