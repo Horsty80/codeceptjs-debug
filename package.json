@@ -1,0 +1,27 @@
+{
+  "name": "codeceptjs-tests",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "worker": "HEADLESS=true codeceptjs run-workers 3 --verbose",
+    "error-1": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error1",
+    "error-2": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error2",
+    "error-3": "HEADLESS=true codeceptjs run-workers 3 --verbose --grep @error3",
+    "codeceptjs:ui": "codecept-ui --app",
+    "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples",
+    "postinstall": "npx playwright install chromium"
+  },
+  "devDependencies": {
+    "@codeceptjs/configure": "^1.0.1",
+    "@codeceptjs/examples": "^1.2.4",
+    "@types/node": "^20.12.12",
+    "codeceptjs": "^3.6.2",
+    "playwright": "^1.44.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
